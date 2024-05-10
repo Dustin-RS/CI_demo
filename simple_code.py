@@ -10,7 +10,3 @@ noise = np.random.randn(n) / 5
 y = ((X[:, valuable_features].sum(axis=1) + noise) > 0).astype(np.uint8)
 
 display(pd.Series(y).value_counts())
-
-from sklearn.model_selection import train_test_split
-
-X_tr, X_val, y_tr, y_val = train_test_split(X, y, test_size=0.3, stratify=y, shuffle=True, random_state=911)
