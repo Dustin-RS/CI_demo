@@ -11,6 +11,7 @@ jobs:
       - name: Lint
         run: python3 -m pylint simple_code.py
   test:
+    needs: [start_scrits]
     runs-on: ubuntu-latest
     steps:
       - name: Checkout 
