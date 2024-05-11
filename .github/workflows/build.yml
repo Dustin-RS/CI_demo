@@ -8,3 +8,5 @@ jobs:
         uses: actions/checkout@v4
       - name: Install
         run: python3 hello.py
+      - name: Lint
+        run: python3 -m pylint simple_code.py
