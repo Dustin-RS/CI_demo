@@ -1,5 +1,9 @@
 name: Check
-on: push
+on:
+  push:
+    # Sequence of patterns matched against refs/heads
+    branches:    
+      - main
 jobs:
   start_scripts:
     runs-on: ubuntu-latest
