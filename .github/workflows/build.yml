@@ -1,5 +1,9 @@
 name: Build
-on: push
+on:
+  push:
+    # Sequence of patterns matched against refs/heads
+    branches:    
+      - main
 jobs:
   hello:
     runs-on: ubuntu-latest
