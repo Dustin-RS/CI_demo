@@ -1,7 +1,7 @@
 name: Check
 on: push
 jobs:
-  start_scrits:
+  start_scripts:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout 
