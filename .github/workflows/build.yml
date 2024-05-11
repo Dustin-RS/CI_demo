@@ -11,4 +11,4 @@ jobs:
       - name: Install deps
         run: pip install pylint
       - name: Lint
-        run: python3 -m pylint simple_code.py
+        run: python3 -m pylint hello.py
